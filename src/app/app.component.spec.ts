@@ -1,9 +1,15 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { MatTableModule } from '@angular/material';
+import {MatInputModule} from "@angular/material/input";
+import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+import {MatSelectModule} from "@angular/material/select";
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ MatTableModule , MatInputModule, FormsModule, HttpClientModule, MatSelectModule],
       declarations: [
         AppComponent
       ],

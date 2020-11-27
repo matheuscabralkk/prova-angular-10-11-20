@@ -7,6 +7,12 @@ import { CepService } from './cep.service';
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+	/*
+	* Poderia utilizar reactive forms para validar formulários, mas amanhã preciso acordar cedo para trabalhar.
+	* áh! e to mandando atrasado pq tive compromisse mais cedo, e trabalho manhã e tarde.
+	* */
+
 	title = 'teste-helpper'
 
 	persons = [
@@ -21,6 +27,7 @@ export class AppComponent {
 			street: 'Teste',
 		}
 	]
+	states = ['RS', 'SP', 'AC', 'PR', 'MG', 'DF'] // entre muitos outros :)
 	columns = ['name', 'cpf', 'phone', 'email', 'cep', 'state', 'city', 'street', 'actions']
 	selectedPerson
 	loading
